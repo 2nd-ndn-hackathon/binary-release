@@ -1,0 +1,43 @@
+# Configuration for jekyll
+# NOTICE: GitHub forces to set `safe: true` in order to prohibit using plugins.
+safe: false
+source: .
+destination: ./_site
+plugins_dir: ./_plugins
+lsi: true
+highlighter: rouge
+markdown: kramdown
+exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'vender']
+
+url: http://2nd-ndn-hackathon.named-data.net/nfd-binary-release
+baseurl: 
+
+# Configuration for permalink
+permalink: /:page.html
+
+# Configuration for site
+title: NFD Binary Release
+short_title: NFD Binary Release
+description: 
+author: Alex Afanasyev, Eric Newberry, Susmit Shannigrahi, Yingdi Yu
+email: 
+
+# Configuration for blog
+lang: en
+columns: 3
+date_format: "%B %d, %Y"
+truncate_len: 200
+
+# Configuration for navbar.html
+navbar_list:
+
+# Configuration for responsive break point when using 'custom'.
+responsive_bp: 768
+
+# Configuration for asides.html
+# CAUTION: `themes` should be false to put the script.html at the bottom.
+asides:
+    github: false
+    tweets: false
+    archive_tabs: false
+

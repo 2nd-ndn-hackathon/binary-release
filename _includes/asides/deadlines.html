@@ -1,0 +1,12 @@
+<section id="sidebar-deadlines" class="well">
+ <h3><i class="fa fa-calendar"></i>&nbsp;Important Dates</h3>
+<ul id="deadlines" class="nav nav-list">
+{% for node in site.deadlines %}
+  <li><p>{{ node.name }}:
+  {% for date in node.date %}
+  <br/><b style="margin-left: 20px">{{ date }}</b>
+  {% endfor %}
+  </p></li>
+{% endfor %}
+</ul>
+</section>

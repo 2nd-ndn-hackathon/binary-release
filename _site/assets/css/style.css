@@ -1,0 +1,263 @@
+/* ===== Primary Styles ========================================================
+   Author: tokkonopapa@yahoo.com
+   ========================================================================== */
+body {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+body > footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+form {
+    margin: 0;
+}
+.well h1, .well h2, .well h3 {
+    margin-top: 0;
+}
+
+/* title of the site */
+#header {
+    /* height: 80px; */
+}
+#header hgroup {
+    /* position: absolute; */
+    margin: 10px 10px 10px 10px;
+}
+#header h1 {
+    margin: 0;
+    font-size: 170%;
+    font-weight: bold;
+}
+#header h1 .short {
+    display: none
+}
+#header h2 {
+    color: #888;
+    margin: 10px 0 10px 0px;
+    line-height: 0.8;
+    font-size: 110%;
+    font-weight: normal;
+}
+@media screen and (max-width: 650px) {
+    #header h2 {
+        display: none;
+    }
+    #header h1 .full {
+        display: none;
+    }
+    #header h1 .short {
+        display: inline;
+    }
+}
+#header a,
+#header a:hover,
+#header a:visited {
+    text-decoration: none;
+}
+
+/* header.html: navbar */
+.navbar-fixed-top {
+    margin-bottom: 20px;
+    position: static;
+}
+.navbar-fixed-top .navbar-inner {
+    padding: 0;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+    box-shadow: none;
+}
+.navbar .btn-navbar {
+    margin-bottom: 5px;
+}
+.lt-ie9 .collapse {
+    overflow: visible; /* removed from 2.1.1, but still IE need this */
+}
+
+/* header.html: dropdown container */
+.navbar .nav > li.dropdown-container {
+    position: relative !important;
+}
+.navbar .nav > li.dropdown-container .dropdown-link {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.navbar .nav > li.dropdown-container .caret {
+    margin-left: 1.5em;
+}
+.navbar .nav > li.dropdown-container .dropdown-link + .dropdown-toggle {
+    z-index: 0;
+}
+
+/* post.html */
+.post {
+}
+.post .meta {
+}
+.post .content {
+}
+
+/* asides: sidebar */
+#sidebar h3 {
+    font-size: 125%;
+    line-height: 1.0em;
+    margin-bottom: 0.5em;
+}
+#sidebar p {
+    margin: 0 !important;
+}
+#sidebar ul {
+    padding: 0 !important;
+}
+#sidebar li.divider {
+    margin: 0.5em 1px;
+}
+
+/* asides/search.html */
+#sidebar-search .btn {
+    line-height: 20px;
+    border-radius: 0 3px 3px 0;
+    position: relative;
+    z-index: 2;
+}
+#sidebar-search input,
+#sidebar-search input:focus {
+    padding-right: 3.5em;
+    position: relative;
+    z-index: 1;
+}
+.lt-ie9 #sidebar-search input {
+    min-height: 20px;
+}
+
+/* asides/archive_tabs.html */
+#sidebar-archives .nav-tabs a {
+    outline: none;
+}
+
+/* asides/recent_post.html */
+#sidebar-recent-posts .disqus-comment_count {
+    font-size: 85%;
+}
+
+/* asides/recent_post.html, asides/tweets.html */
+#sidebar-tweets p,
+#sidebar-recent-posts p {
+    margin: 0.25em 0;
+}
+
+/* asides/tweets.html */
+#tweets {
+    margin-bottom: 1em;
+}
+#tweets li a:last-child:hover {
+    text-decoration: none;
+}
+#tweets li a:last-child span {
+    font-size: 75%;
+}
+
+/* post/post_meta.html */
+#post-meta ul,
+#post-meta li {
+    margin: 0;
+    display: inline;
+    list-style: none outside none;
+}
+#post-meta li {
+    margin-right: 0.5em;
+}
+#post-meta .mini-icon {
+    margin-left: 9px;
+    display: block;
+}
+@media (max-width: 767px) {
+    #post-meta .meta {
+	display: none;
+    }
+}
+
+.highlight {
+    border-radius: 4px;
+}
+.highlight pre {
+    background-color: inherit !important;
+}
+
+/* project/index.html */
+#myProject header h1 {
+    font-size: 300%;
+    margin-bottom: 0.7em;
+}
+#myCarousel p {
+    color: #aaa;
+    text-shadow: 0px 2px 3px #000;
+}
+#myCarousel img {
+    margin: 0 auto;
+}
+
+section ul {
+    margin-bottom: 10px;
+    /* margin-top: -10px; */
+}
+
+small {
+    font-size: 70%;
+}
+
+#site-title {
+    /* background-image: "../images/ndn-2nd-hackathon-small.jpg"; */
+}
+
+.program tbody tr :first-child {
+    width: 200px;
+}
+
+@media print {
+    body {
+        font-size: 12px;
+    }
+
+    .h6 .small {
+        font-size: 75%;
+    }
+    h1,
+    .h1 {
+        font-size: 200%;
+    }
+    h2,
+    .h2 {
+        font-size: 180%;
+    }
+    h3,
+    .h3 {
+        font-size: 150%;
+    }
+    h4,
+    .h4 {
+        font-size: 120%;
+    }
+    h5,
+    .h5 {
+        font-size: 100%;
+    }
+    h6,
+    .h6 {
+        font-size: 80%;
+    }
+    blockquote, pre {
+        font-size: 100%;
+    }
+    legend {
+        font-size: 200%;
+    }
+}
+
