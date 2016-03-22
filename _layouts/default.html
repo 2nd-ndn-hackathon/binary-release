@@ -28,7 +28,9 @@ layout: nil
 
     <aside id="sidebar" class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
     {% for img in site.screenshots %}
-    <img src="{{ site.url }}/assets/images/{{ img }}" width="100%"/>
+    <a href="{{ site.url }}/assets/images/{{ img }}" data-lightbox="screenshots">
+      <img src="{{ site.url }}/assets/images/{{ img }}" width="100%"/>
+    </a>
     {% endfor %}
     </aside><!--/span-->
 
