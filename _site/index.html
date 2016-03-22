@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>NFD Binary Release - NFD Binary Release</title>
+<title>NFD Binary Release</title>
 <meta name="description" content="">
 <meta name="author" content="Alex Afanasyev, Eric Newberry, Susmit Shannigrahi, Yingdi Yu">
 <link rel="canonical" href="http://2nd-ndn-hackathon.named-data.net/nfd-binary-release/">
@@ -67,6 +67,20 @@
       <ul class="nav navbar-nav">
 
 
+  
+  
+          <li class="">
+            <a href="https://github.com/2nd-ndn-hackathon/nfd-binary-release"><i class="fa fa-github"></i> Our Github Page</a>
+          </li>
+  
+
+  
+  
+          <li class="">
+            <a href="https://github.com/2nd-ndn-hackathon/nfd-binary-release/releases"><i class="fa fa-github"></i> NDN.app Releases</a>
+          </li>
+  
+
         </li>
       </ul>
       <form class="navbar-form navbar-right" role="search" action="http://google.com/search" method="get">
@@ -87,20 +101,10 @@
 <div class="container-fluid">
   <div class="row-fluid">
 
-    <aside id="sidebar" class="col-xs-8 col-sm-5 col-md-4 col-lg-3 pull-right">
-      <section id="sidebar-deadlines" class="well">
- <h3><i class="fa fa-calendar"></i>&nbsp;Important Dates</h3>
-<ul id="deadlines" class="nav nav-list">
-
-</ul>
-</section>
-
-    </aside><!--/span-->
-
-    <div id="main" class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
+    <div id="main" class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
       <article>
  <header>
-   <h1>NFD Binary Release</h1>
+   <h1></h1>
  </header>
 
 <section>
@@ -115,25 +119,25 @@
 
 <h2 id="problem-statement">Problem Statement</h2>
 
-<p>Binary releases of NFD are currently only available on some systems. Even on the systems where there are binaries available, they may be out of date. Thus, we attempted to develop releasable binaries for multiple systems. The binaries would be accompanied by the NFD Control Center.</p>
+<p>Binary releases of NFD are currently only available on some systems. Even on the systems where there are binaries available, they may be out of date. Thus, we attempted to develop packaging scripts for multiple platforms. The binaries would be accompanied by the NFD Control Center.</p>
 
-<p>In addition, the</p>
+<p>In addition, NFD Control Center has not been updated in a while and could be improved by adding various features, including</p>
 
 <h2 id="approaches">Approaches</h2>
 
-<p>Alex and Yingdi worked to add management interfaces, status monitoring, and autoconfiguration to the NFD Control Center. They also worked on a script to build an OS X bundle containing ndn-cxx, NFD, ndn-tools, and NFD Control Center.</p>
+<p>Alex and Yingdi worked on scripts to build an OS X bundle containing the NDN platform (ndn-cxx, NFD, ndn-tools, and NFD Control Center).</p>
 
-<p>Susmit worked on adding a status display to NFD Control Center.</p>
+<p>Susmit worked on a status display for NFD Control Center.</p>
 
-<p>Eric worked on a port of NDN to allow for native compilation on Windows.</p>
+<p>Eric worked on a port of NDN to natively compile on Windows.</p>
 
 <h2 id="what-works">What Works</h2>
 
-<p>NFD Control Center is now able to configure the security environment of the NDN platform on OS X.</p>
+<p>NFD Control Center is now able to visualize the security environment of the NDN platform on OS X.  It is also possible to set default keys.</p>
 
 <p>A script was written to create a bundle containing the NDN platform (ndn-cxx, NFD, ndn-tools, and NFD Control Center).</p>
 
-<h2 id="what-doesnt-work">What Doesn’t Work</h2>
+<h2 id="what-is-not-yet-working">What Is Not Yet Working</h2>
 
 <p>Efforts to compile ndn-cxx natively on Windows were not successful.</p>
 
@@ -143,7 +147,8 @@
 
 <ul>
   <li>Integration of NFD Control Center with ndncert.</li>
-  <li>Add a status display to NFD Control Center.</li>
+  <li>Full NFD Management</li>
+  <li>Adding new keys</li>
 </ul>
 
 </section>
@@ -154,10 +159,22 @@
 
     </div>
 
-    <aside id="sidebar" class="col-xs-8 col-sm-5 col-md-4 col-lg-3">
-      
-
-
+    <aside id="sidebar" class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+    
+    <img src="http://2nd-ndn-hackathon.named-data.net/nfd-binary-release/assets/images/1.png" width="100%"/>
+    
+    <img src="http://2nd-ndn-hackathon.named-data.net/nfd-binary-release/assets/images/2.png" width="100%"/>
+    
+    <img src="http://2nd-ndn-hackathon.named-data.net/nfd-binary-release/assets/images/3.png" width="100%"/>
+    
+    <img src="http://2nd-ndn-hackathon.named-data.net/nfd-binary-release/assets/images/4.png" width="100%"/>
+    
+    <img src="http://2nd-ndn-hackathon.named-data.net/nfd-binary-release/assets/images/5.png" width="100%"/>
+    
+    <img src="http://2nd-ndn-hackathon.named-data.net/nfd-binary-release/assets/images/6.png" width="100%"/>
+    
+    <img src="http://2nd-ndn-hackathon.named-data.net/nfd-binary-release/assets/images/7.png" width="100%"/>
+    
     </aside><!--/span-->
 
   </div><!--/row-->

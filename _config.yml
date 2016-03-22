@@ -30,6 +30,10 @@ truncate_len: 200
 
 # Configuration for navbar.html
 navbar_list:
+- name: <i class="fa fa-github"></i> Our Github Page
+  link: https://github.com/2nd-ndn-hackathon/nfd-binary-release
+- name: NDN.app Releases
+  link: https://github.com/2nd-ndn-hackathon/nfd-binary-release/releases
 
 # Configuration for responsive break point when using 'custom'.
 responsive_bp: 768
@@ -41,3 +45,12 @@ asides:
     tweets: false
     archive_tabs: false
 
+screenshots:
+ - 1.png
+ - 2.png
+ - 3.png
+ - 4.png
+ - 5.png
+ - 6.png
+ - 7.png
+ 
